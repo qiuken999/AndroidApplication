@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="#fff9c4"
+    tools:context="com.example.coco.a420project.Game">
+
+    <WebView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:id="@+id/text1"
+            android:layout_below="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0d47a1"
+            android:textStyle="bold"
+            android:scrollbars="vertical"
+            />
+    </ScrollView>
+
+    <Button
+        android:text="Test"
+        android:layout_width="80dp"
+        android:textColor="#FFF236"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/image"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/buttonG" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:id="@+id/button"
+        android:layout_marginStart="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/buttonshape"
+        android:layout_width="80dp"
+        android:textColor="#FFF236"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:layout_width="80dp"
+        android:textColor="#FFF236"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/buttonshape"
+        android:layout_width="80dp"
+        android:textColor="#FFF236"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:text="STOP PLAYING"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        android:layout_width="150dp"
+        android:textColor="#FFF236"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
+
+
+</RelativeLayout>
